@@ -1,0 +1,6 @@
+<title>Edit Keyboard</title>
+<h1>Edit Keyboard</h1>
+
+<%= provide(:url_path, keyboard_path(@keyboard)) %>
+<%= render 'keyboard_form' %>
+<%= link_to "Delete", @keyboard, method: :delete, data: {confirm: "Are you sure?"} %>

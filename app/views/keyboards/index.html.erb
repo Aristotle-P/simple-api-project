@@ -1,0 +1,10 @@
+<title>All Keyboards</title>
+<h1>All Keyboards</h1>
+
+<% @keyboards.each do |board| %>
+  <%= board.name %>
+  <%= board.layout %>
+  <%= board.switch %>
+  <%= link_to "Delete", board, method: :delete, data: {confirm: "Are you sure?"} %>
+  <br>
+<% end %>

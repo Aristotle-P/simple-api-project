@@ -1,0 +1,5 @@
+<title>Your Keyboard</title>
+<h1>Your Keyboard</h1>
+
+<%= @keyboard.name %>, <%= @keyboard.layout %>, <%= @keyboard.switch %>
+<%= link_to "Delete", @keyboard, method: :delete, data: {confirm: "Are you sure?"} %>

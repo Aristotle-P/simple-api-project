@@ -1,0 +1,10 @@
+<%= form_for @keyboard, url: yield(:url_path) do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+  <%= f.label :layout %>
+  <%= f.text_field :layout %>
+  <%= f.label :switch %>
+  <%= f.text_field :switch %>
+
+  <%= f.submit "Submit" %>
+<% end %>
